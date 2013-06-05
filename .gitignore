@@ -1,0 +1,5 @@
+# Ignore
+.sass-cache
+Gemfile.lock
+css
+vendor

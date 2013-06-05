@@ -1,0 +1,20 @@
+// Colors
+$black: #000000;
+$white: #ffffff;
+
+// Measures
+$container_pad: 20px;
+$footer_height: 60px;
+
+@mixin clearfix {
+  display: inline-block;
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  * html & { height: 1px }
+}
+
