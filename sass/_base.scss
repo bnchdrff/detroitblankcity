@@ -19,12 +19,47 @@ body {
   height: $footer_height;
 }
 
+#links {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 99%;
+  margin: 0;
+  padding: $container_pad;
+  background-color: $black;
+  border-top: $container_pad/2 solid $darkgray;
+  color: $white;
+  height: $footer_height;
+  overflow: hidden;
+}
+
 @media (max-width: 767px) {
   #footer {
-    margin-left: (-$container_pad);
-    margin-right: (-$container_pad);
-    padding-left: $container_pad;
-    padding-right: $container_pad;
+    margin-left: (-$footer_pad);
+    margin-right: (-$footer_pad);
+    padding-left: $footer_pad;
+    padding-right: $footer_pad;
   }
 }
 
+// special things
+
+#titlegif {
+  max-width: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.e {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,10 +1,13 @@
 // Colors
 $black: #000000;
 $white: #ffffff;
+$lightgray: #ccc;
+$darkgray: #3a3a3a;
 
 // Measures
-$container_pad: 20px;
-$footer_height: 60px;
+$container_pad: 3px;
+$footer_pad: 10px;
+$footer_height: 20px;
 
 @mixin clearfix {
   display: inline-block;
