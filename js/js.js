@@ -31,6 +31,17 @@ $('#gotoe2').click(function(ev) {
   goto_e(2);
 });
 
+$('#fbshare').click(function(ev) {
+  ev.preventDefault();
+  var w = 300;
+  var h = 300;
+  var l, t;
+  l = (window.screen.width / 2) - ((w / 2) + 10);
+  t = (window.screen.height / 2) - ((h / 2) + 50);
+  var opts = "status=no,height=" + h + ",width=" + w + ",resizable=yes,left=" + l + ",top=" + t + ",screenX=" + l + ",screenY=" + t + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
+  window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href)+'&t='+encodeURIComponent(document.title),'sharer', opts);
+});
+
 });
 
 })(this.jQuery);
