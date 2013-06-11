@@ -17,7 +17,7 @@ $('#intro').click(function(ev) {
 var goto_e = function(episode) {
   $('#links').animate(footer_shown);
   $('#intro, .e').hide();
-  $('#e' + episode).show();
+  $('#e' + episode).css({height:$(window).height()-40+'px'}).show();
   document.title = 'DETROIT (BLANK CITY) | EPISODE ' + episode;
 };
 
