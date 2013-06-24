@@ -11,7 +11,7 @@ $('#links').css(footer_hidden);
 $('#e1, #e2').hide();
 $('#intro').click(function(ev) {
   ev.preventDefault();
-  goto_e(1);
+  goto_e(2);
 });
 
 var goto_e = function(episode) {
